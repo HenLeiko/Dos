@@ -16,7 +16,7 @@ if ($interval <= 1 and $_SESSION['requests'] >= $limit_request) {
 
 else if ($interval > 2) {
     $_SESSION['requests'] = 0;
-    $_SESSION['banip'] = 0;
+    $_SESSION['block'] = 0;
     $_SESSION['first_request'] = $_SERVER['REQUEST_TIME'];
 }
 
